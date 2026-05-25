@@ -1,0 +1,62 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+<div class="box">
+    <div class="b1"></div>
+    <div class="b2">
+        <div class="b21"></div>
+        <div class="b22">
+            <div class="b31">
+                <div class="b41"></div>
+                <div class="b42"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .b1{
+        border: 3px solid black;
+        height: 50px;
+        width: 600px;
+    }
+    .b2{
+        display:flex;
+        flex-direction: row;
+            border: 3px solid black;
+
+            height: 150px;
+            width: 600px;
+    }
+    .b21{
+        border: 3px solid black;
+        flex: 1;
+    }
+    .b22{
+       border: 3px solid black;
+       flex:2;
+       height: 150px;
+    }
+    .b31{
+        display: flex;
+        flex-direction: row;
+         border: 3px solid black;
+        height: 70px;
+    }
+    .b41{
+                    border: 3px solid black;
+        flex: 1;
+    }
+    .b42{
+            border: 3px solid black;
+        flex: 2;
+    }
+</style>
+  </head>
+  </body>
+  </html>
+   

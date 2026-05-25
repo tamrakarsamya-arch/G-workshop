@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input-value" value="0"><br>
+    
+<div class="numbers">    
+    <button onclick="sendValue('1')">1</button>
+    <button onclick="sendValue('2')">2</button>  
+    <button onclick="sendValue('3')">3</button><br>
+    <button onclick="sendValue('4')">4</button>
+    <button onclick="sendValue('5')">5</button>
+    <button onclick="sendValue('6')">6</button><br>
+    <button onclick="sendValue('7')">7</button>
+    <button onclick="sendValue('8')">8</button>
+    <button onclick="sendValue('9')">9</button><br>
+    <button onclick="sendValue('0')">0</button>
+</div>
+    <button  onclick="reset()">C</button>
+    <button  onclick="calculate()">=</button>
+    <button  onclick="sendValue('+')">+</button>
+    <button  onclick="sendValue('-')">-</button>
+    <button  onclick="sendValue('*')">*</button>
+    <button  onclick="sendValue('/')">/</button>
+<script>
+    let input = document.getElementById('input-value');
+function sendValue(value) {
+    if (input.value === "0") {
+        input.value = value;  
+    } else {
+        input.value =input.value + value; 
+    }
+}
+    function reset() {
+        input.value = "";
+    }
+    function calculate() {
+        try {
+            input.value = eval(input.value);
+        } catch {
+            input .value = "Error";
+        }
+    }
+</script> 
+</body>
+</html>

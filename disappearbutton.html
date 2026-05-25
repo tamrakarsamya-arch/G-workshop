@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+
+<style>
+.test{
+  color: red;
+  font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+<button id="mybtn">Click me</button>
+<div class="myclass">This is a div element</div>
+
+<script>
+var gre = document.querySelector('#mybtn');
+
+gre.addEventListener('click', function(){
+    var elem = document.querySelector('.myclass');
+    setTimeout(()=>{
+        elem.classList.toggle('test');
+    }, 3000);
+});
+</script>
+</body>
+</html>

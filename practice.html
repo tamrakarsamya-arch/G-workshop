@@ -1,0 +1,219 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+  
+   <table border="5" cellpadding="10" cellspacing="10" class="table">
+      <tr>
+         <th colspan="2">subject</th>
+         <th>john doe</th>
+         <th>mariam luther</th>
+      </tr>
+      <tr>
+      <td rowspan="2"> biology</td>
+      <td>practical</td>
+      <td>A</td>
+      <td>A</td>
+      </tr>  
+      <tr>
+         <td>theory</td>
+         <td>a</td>
+         <td>b</td>
+      </tr>
+      <tr>
+         <td rowspan="2">physics</td>
+         <td>practical</td>
+         <td>w</td>
+          <td>j</td>
+      </tr>
+      <tr>
+         <td>theory</td>
+         <td>a</td>
+         <td>v</td>
+      </tr>
+   </table>
+  
+  <style>
+   .table{
+      background-color: lightblue;
+   }
+  </style>
+  <br>
+  <FORM>
+   <h1>form</h1>
+   <div class="formwrap">
+   <label for="name">Name:</label>
+   <input type="text" id="name" name="name" placeholder="enter your name"></div>
+    <div class="formwrap">
+   <label for ="email">Email:</label>
+   <input type="text" id="email" name="email" placeholder="enter your email">
+</div>
+<div class="formwrap">
+   <label for="password">Password:</label>
+   <input type="text" id="password" name="password" placeholder="enter your password">
+</div>
+<div class="button">submit</button></div>
+  </FORM>
+  <style>
+   .formwrap {
+      margin: 5px;
+      padding: 5px;
+      border-radius: 50px;
+      border: 5px solid black;
+      background-color: brown;
+   }
+   .button{
+      background-color: black;
+      color: white;
+      padding: 10px;
+      width: 90px;
+      border: none;
+      border-radius: 5px;
+   }
+   
+   @media(max-width:600px){
+     body{
+       background-color:rgb(141, 40, 40);
+   }
+   }
+  </style>
+
+  <div class="list">
+   <h1>list</h1>
+   <ol>
+      <li>mango</li>
+      <li>apple</li>
+   </ol>
+   <ul>
+      <li>happy</li>
+      <li>sad</li>
+   </ul>
+  </div>
+   <style>
+    .list{
+         background-color: lightblue;
+         border: 5px solid black;
+         border-radius: 50px;
+         padding: 10px;
+    }
+  </style>
+  <div class="box1">
+   <div class="box2">
+      <div class="box3"></div>
+   </div>
+  </div>
+  <style>
+   .box1{
+      position: relative;
+      background-color: aqua;
+      height: 230px;
+      width :350px;
+   }
+   .box2{
+      position: absolute;
+      background-color: brown;
+      height: 130px;
+      width: 250px;
+      top: 50px;
+   left: 50px;
+
+   }
+   .box3{
+      position: absolute;
+      background-color: beige;
+      height: 50px;
+      width: 80px;
+      top: 40px;
+      left: 80px;
+   }
+  </style>
+  <div class="bar">
+   <div class="header">heading section</div>
+   <div class="nav">navigation bar</div>
+   <div class="flex">
+      <div class="index">index</div>
+      <div class="content">content section</div>
+   </div>
+   <div class="footer">footer</div>
+   <style>
+      .bar{
+       text-align: center;
+      }
+      .header{
+         border: 3px solid cornflowerblue;
+         height: 30px;
+         width:750px;
+      }
+      .nav{
+           border: 3px solid cornflowerblue;
+         height: 30px;
+         width:750px;
+      }
+      .flex{
+         display: flex;
+         flex-direction: row;
+         width: 750px;
+         border: 3px solid cornflowerblue;
+      }
+      .index{
+         border: 3px solid cornflowerblue;
+         flex: 1;
+      }
+      .content{
+        border: 3px solid cornflowerblue;
+flex: 2;   
+   }
+   .footer{
+      border:3px solid cornflowerblue;
+      width: 750px;
+   }
+   </style>
+  </div>
+ <br>
+  <div class="board">
+   <div class="b1"></div>
+   <div class="b11">
+   <div class="b2">
+      <div class="b21"></div>
+      <div class="b22"></div>
+   </div>
+   <div class="b3"></div>
+</div>
+   <div class="b4"></div>
+    <div class="b5"></div>
+  </div>
+  <style>
+   .b1{
+      border: 3px solid black;
+      height: 50px;
+      width: 600px;
+   }
+    .b11{
+   display: flex;
+   flex-direction: row;
+   border: 3px solid black;
+   width:600px
+  }
+   .b2{
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      height: 50px;
+      width:300px ;
+   }
+   .b21{
+      border: 1px solid black;
+      flex:1;
+   }
+   .b22{
+      border: 1px solid black;
+      flex:2;
+   }
+  </style>
+  
+ </body>
+ </html>
